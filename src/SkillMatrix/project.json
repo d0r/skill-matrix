@@ -16,7 +16,9 @@
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
     "AutoMapper": "5.0.2",
     "SkillMatrix.Business": "1.0.0-*",
-    "SkillMatrix.Data": "1.0.0-*" },
+    "SkillMatrix.Data": "1.0.0-*",
+    "NLog": "4.4.0-betaV15",
+    "NLog.Extensions.Logging": "1.0.0-rtm-alpha4"},
 
   "tools": {
     "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"
@@ -45,7 +47,8 @@
   "publishOptions": {
     "include": [
       "wwwroot",
-      "web.config"
+      "web.config",
+      "nlog.config"
     ]
   },
 

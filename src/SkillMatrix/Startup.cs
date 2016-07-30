@@ -12,8 +12,10 @@ using Microsoft.Extensions.Logging;
 using SkillMatrix.Business.Service.Contract;
 using SkillMatrix.Business.Service.Implementation;
 using SkillMatrix.Business.Infrastructure;
+using SkillMatrix.Data;
 using SkillMatrix.Data.Service.Contract;
 using SkillMatrix.Data.Service.Implementation;
+using NLog.Extensions.Logging;
 
 namespace SkillMatrix
 {
@@ -64,6 +66,7 @@ namespace SkillMatrix
 
             services.AddScoped<ISkillService, SkillService>();
             services.AddScoped<ISkillRepository, SkillRepository>();
+            services.AddScoped((_) => new SkillMatrixContext(Configuration.GetConnectionString("SkillMatrix")));
             AutoMapperConfigurator.Configure();
             services.AddSingleton<IMapper, Mapper>();
         }
@@ -71,6 +74,10 @@ namespace SkillMatrix
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddNLog();
+
+            env.ConfigureNLog("nlog.config");
+
             app.Use((context, next) =>
             {
                 if (string.Equals(context.Request.Method, "DEBUG"))
