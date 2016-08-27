@@ -14,7 +14,7 @@
     "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
     "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
-    "AutoMapper": "5.0.2",
+    "AutoMapper": "5.1.1",
     "SkillMatrix.Business": "1.0.0-*",
     "SkillMatrix.Data": "1.0.0-*",
     "NLog": "4.4.0-betaV15",

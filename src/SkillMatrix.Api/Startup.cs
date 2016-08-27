@@ -6,11 +6,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
 using SkillMatrix.Business.Infrastructure;
-using SkillMatrix.Business.Service.Contract;
-using SkillMatrix.Business.Service.Implementation;
+using SkillMatrix.Business.Services.Contracts;
+using SkillMatrix.Business.Services.Implementations;
 using SkillMatrix.Data;
-using SkillMatrix.Data.Service.Contract;
-using SkillMatrix.Data.Service.Implementation;
+using SkillMatrix.Data.Services.Contracts;
+using SkillMatrix.Data.Services.Implementations;
 using System.Threading.Tasks;
 
 namespace SkillMatrix.Api
