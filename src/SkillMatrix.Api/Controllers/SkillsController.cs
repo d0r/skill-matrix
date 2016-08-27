@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SkillMatrix.Business.Model;
-using SkillMatrix.Business.Service.Contract;
+using SkillMatrix.Business.Models;
+using SkillMatrix.Business.Services.Contracts;
 using System.Collections.Generic;
 
-namespace SkillMatrix.Api.Controller
+namespace SkillMatrix.Api.Controllers
 {
     [Route("api/[controller]")]
     public class SkillsController : Microsoft.AspNetCore.Mvc.Controller

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using SkillMatrix.Data.Entity;
+using SkillMatrix.Data.Entities;
 
 namespace SkillMatrix.Business.Infrastructure
 {
@@ -9,8 +9,8 @@ namespace SkillMatrix.Business.Infrastructure
         {
             Mapper.Initialize(cfg =>
             {
-                cfg.CreateMap<Skill, Model.Skill>();
-                cfg.CreateMap<LevelInfo, Model.LevelInfo>();
+                cfg.CreateMap<Skill, Models.Skill>();
+                cfg.CreateMap<LevelInfo, Models.LevelInfo>();
             });
         }
     }

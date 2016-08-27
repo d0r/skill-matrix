@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using SkillMatrix.Business.Model;
+using SkillMatrix.Business.Models;
 
-namespace SkillMatrix.Business.Service.Contract
+namespace SkillMatrix.Business.Services.Contracts
 {
     public interface ISkillService
     {

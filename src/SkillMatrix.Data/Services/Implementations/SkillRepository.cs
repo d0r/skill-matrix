@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using SkillMatrix.Data.Entity;
-using SkillMatrix.Data.Service.Contract;
+using SkillMatrix.Data.Entities;
+using SkillMatrix.Data.Services.Contracts;
 
-namespace SkillMatrix.Data.Service.Implementation
+namespace SkillMatrix.Data.Services.Implementations
 {
     public class SkillRepository : ISkillRepository
     {

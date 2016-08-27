@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SkillMatrix.Business.Model
+namespace SkillMatrix.Business.Models
 {
     public class Skill
     {

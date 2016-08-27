@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using AutoMapper;
-using SkillMatrix.Business.Model;
-using SkillMatrix.Business.Service.Contract;
-using SkillMatrix.Data.Service.Contract;
+using SkillMatrix.Business.Models;
+using SkillMatrix.Business.Services.Contracts;
+using SkillMatrix.Data.Services.Contracts;
 
-namespace SkillMatrix.Business.Service.Implementation
+namespace SkillMatrix.Business.Services.Implementations
 {
     public class SkillService : ISkillService
     {

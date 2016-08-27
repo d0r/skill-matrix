@@ -1,8 +1,8 @@
-﻿{
+{
   "version": "1.0.0-*",
 
   "dependencies": {
-    "AutoMapper": "5.0.2",
+    "AutoMapper": "5.1.1",
     "NETStandard.Library": "1.6.0",
     "SkillMatrix.Data": "1.0.0-*"
   },

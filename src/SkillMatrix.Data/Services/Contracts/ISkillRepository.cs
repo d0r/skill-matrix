@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using SkillMatrix.Data.Entity;
+using SkillMatrix.Data.Entities;
 
-namespace SkillMatrix.Data.Service.Contract
+namespace SkillMatrix.Data.Services.Contracts
 {
     public interface ISkillRepository
     {

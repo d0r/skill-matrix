@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SkillMatrix.Data.Entity;
+using SkillMatrix.Data.Entities;
 
 namespace SkillMatrix.Data
 {
