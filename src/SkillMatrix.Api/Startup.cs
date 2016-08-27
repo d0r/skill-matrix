@@ -1,23 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using NLog.Extensions.Logging;
+using SkillMatrix.Business.Infrastructure;
 using SkillMatrix.Business.Service.Contract;
 using SkillMatrix.Business.Service.Implementation;
-using SkillMatrix.Business.Infrastructure;
 using SkillMatrix.Data;
 using SkillMatrix.Data.Service.Contract;
 using SkillMatrix.Data.Service.Implementation;
-using NLog.Extensions.Logging;
+using System.Threading.Tasks;
 
-namespace SkillMatrix
+namespace SkillMatrix.Api
 {
     //public class Startup
     //{

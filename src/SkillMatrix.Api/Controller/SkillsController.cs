@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SkillMatrix.Business.Service.Contract;
 using SkillMatrix.Business.Model;
+using SkillMatrix.Business.Service.Contract;
+using System.Collections.Generic;
 
-namespace SkillMatrix.Controller
+namespace SkillMatrix.Api.Controller
 {
     [Route("api/[controller]")]
     public class SkillsController : Microsoft.AspNetCore.Mvc.Controller
